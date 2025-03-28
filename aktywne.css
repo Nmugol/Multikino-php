@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+         background: url('image/tlo2.jpg') no-repeat;
+        background-size: cover;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+ 
+    .naglowek ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        background-color: rgb(42, 41, 41);
+    }
+    
+    .naglowek li {
+        float: left;
+    }
+    
+    .naglowek li a {
+        display: block;
+        color: rgb(231, 225, 225);
+        text-align: center;
+        padding: 15px 16px;
+        text-decoration: none;
+    }
+    
+    .naglowek li a:hover {
+        background-color: #646363;
+    }
+    
+    .container {
+        margin: 20px auto;
+        width: 80%;
+        margin-top: 80px;
+        margin-left: 143px;
+        max-width: 1200px;
+        text-align: center;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        
+        justify-content: center;
+        padding: 20px;
+      
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(150px);
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: #fff;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 10px #000000;
+    
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    
+    th, td {
+        padding: 10px;
+        border: 1px solid #6d6a6a;
+        text-align: center;
+    }
+    
+    th, tr{
+        background-color: #f1eded;
+        color: #555;
+    }
+    
+    
+    
+    .btn{
+        width: 10%;
+        height: 35px;
+        background: #454545;
+        border: 2px solid #ffffff;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #797979;
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    
+    background-position: center;
+    height: 500px;
+}
+
+.naglowek ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(42, 41, 41);
+}
+
+.naglowek li {
+    float: left;
+}
+
+.naglowek li a {
+    display: block;
+    color: rgb(231, 225, 225);
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.naglowek li a:hover {
+    background-color: #646363;
+}
