@@ -1,0 +1,76 @@
+body {
+    background: url('image/tlo3.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.naglowek {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.naglowek ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.naglowek li {
+    float: left;
+}
+
+.naglowek li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.naglowek li a:hover {
+    background-color: #111;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.print-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a5a8a5;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #898383;
+}
