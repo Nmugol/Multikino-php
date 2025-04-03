@@ -92,23 +92,26 @@ body {
             </div>
         </div>
     <?php elseif ($zalogowany == 1): ?>
-        <ul>
-            <li><a href="index.php">Strona główna</a></li>
-            <li><a href="oferta.php">Kinowe przekąski</a></li>
-            <li><a href="kontakt.php">Kontakt</a></li>
+        <div class="naglowek cien">
+            <ul>
+                <li><a href="index.php">Strona główna</a></li>
+                <li><a href="oferta.php">Kinowe przekąski</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
+                
             <li style="float:right"><a href="wyloguj.php">Wyloguj się</a></li>
         </ul>
+        </div>
 
         <div class="glowna2">
             <div class="grid-container">
-                <div class="grid-item"><a href="rezerwacje.php">Dokonaj rezerwacje</a></div>
-                <div class="grid-item"><a href="aktywne.php">Wyświetl aktywne rezerwacje</a></div>
-                <div class="grid-item"><a href="zmienRezerwacje.php">Usuń rezerwacje</a></div>
-                <div class="grid-item"><a href="zmienDane.php">Zmien dane osobowe</a></div>
+                <a href="rezerwacje.php"><div class="grid-item">Dokonaj rezerwacje</div></a>
+                <a href="aktywne.php"><div class="grid-item">Wyświetl aktywne rezerwacje</div></a>
+                <a href="zmienRezerwacje.php"><div class="grid-item">Usuń rezerwacje</div></a>
+                <a href="zmienDane.php"><div class="grid-item">Zmien dane osobowe</div></a>
             </div>
 
             <div class="font">
-                Cześć <?php if (mysqli_num_rows($result) > 0) {
+                Cześć&nbsp;<?php if (mysqli_num_rows($result) > 0) {
                             $row = mysqli_fetch_assoc($result);
                             echo $row["imie"];
                         }
@@ -120,19 +123,24 @@ body {
             </div>
         </div>
     <?php elseif ($zalogowany == 2): ?>
-        <div class="naglowek">
-        <ul>
-            <li><a href="index.php">Strona główna</a></li>
-            <li><a href="oferta.php">Kinowe przekąski</a></li>
-            <li><a href="kontakt.php">Kontakt</a></li>
+        <div class="naglowek cien">
+            <ul>
+                <li><a href="index.php">Strona główna</a></li>
+                <li><a href="oferta.php">Kinowe przekąski</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
+                
             <li style="float:right"><a href="wyloguj.php">Wyloguj się</a></li>
         </ul>
         </div>
-        <h1>Zalogowany jako pracownik!</h1>
         <div class="glowna3">
-  
             <div class="grid-container">
-                <div class="grid-item"><a href="pracownik.php">Wyświetl rezerwacje</a></div>
+                <a href="pracownik.php"><div class="grid-item">Wyświetl rezerwacje</div></a>
+                <a href="dodaj_film.php"><div class="grid-item">Dodaj film</div></a>
+                <a href="dodaj_seans.php"><div class="grid-item">Dodaj seans</div></a>
+            </div>
+
+            <div class="font">
+                Zalogowano jako pracownik!
             </div>
         </div>
         
