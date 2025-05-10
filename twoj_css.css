@@ -1,0 +1,720 @@
+/* Ikony Bootstrap */
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /* Usuń domyślne marginesy */
+}
+
+body {
+    background-color: #ffffe6;
+    color: #212529;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    min-height: 40px;
+    font-size: 15px;
+}
+
+.sekcja1 {
+    height: auto;
+    width: auto;
+    text-align: left;
+    border-color: blue;
+    border-width: 1px;
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+
+.page-footer {
+    height: 21px;
+    width: auto;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.container-fluid {
+    padding: 0;
+    /* Usuń domyślne paddingi, jeśli to potrzebne */
+}
+
+
+/* Jasny motyw */
+
+body[data-bs-theme="light"] {
+    background-color: #c8ddf2;
+    color: #212529;
+}
+
+.navbar[data-bs-theme="light"] {
+    background-color: #007bff;
+}
+
+.page-footer[data-bs-theme="light"] {
+    background-color: #92a3b5;
+    color: white;
+    border-color: #007bff;
+}
+
+body[data-bs-theme="yellow"] {
+    background-color: #c8ddf2;
+    color: #212529;
+}
+
+.navbar[data-bs-theme="yellow"] {
+    background-color: #007bff;
+}
+
+.page-footer[data-bs-theme="yellow"] {
+    background-color: #92a3b5;
+    color: white;
+    border-color: #007bff;
+}
+
+
+/* Auto motyw */
+
+body[data-bs-theme="auto"] {
+    color: #212529;
+}
+
+
+/* Ciemny motyw */
+
+body[data-bs-theme="dark"] {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body[data-bs-theme="blue"] {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+#animatedBackground {
+    position: fixed;
+    /* Tło nie przeszkadza w przewijaniu */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Umieszczamy tło za zawartością */
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+
+/* Tło animowane w osobnym divie */
+
+[data-bs-theme="dark"] #animatedBackground {
+    background: linear-gradient(45deg, #181818, #290000);
+}
+
+[data-bs-theme="blue"] #animatedBackground {
+    background: linear-gradient(45deg, #252525, #02002d);
+}
+
+[data-bs-theme="light"] #animatedBackground {
+    background: linear-gradient(45deg, #aff0d9, #63d4ae);
+}
+
+[data-bs-theme="yellow"] #animatedBackground {
+    background: linear-gradient(45deg, #f6f495, #d4c73f);
+}
+
+[data-bs-theme="auto"] #animatedBackground {
+    background: linear-gradient(45deg, #ffffff, #e1e1e1);
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #9c9c9c !important;
+    text-shadow: 0px 0px 8px rgba(59, 59, 59, 0.8);
+}
+
+[data-bs-theme="yellow"] .navbar-nav .nav-link:hover,
+[data-bs-theme="light"] .navbar-nav .nav-link:hover {
+    color: #cacaca !important;
+    text-shadow: 0px 0px 8px rgba(59, 59, 59, 0.8);
+}
+
+.navbar-nav .dropdown-menu {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:focus {
+    color: #9c9c9c !important;
+    text-shadow: 0px 0px 10px rgb(59, 59, 59);
+}
+
+[data-bs-theme="light"] .navbar-nav .nav-item .nav-link.active,
+[data-bs-theme="light"] .navbar-nav .nav-item .nav-link:focus,
+[data-bs-theme="yellow"] .navbar-nav .nav-item .nav-link.active,
+[data-bs-theme="yellow"] .navbar-nav .nav-item .nav-link:focus {
+    color: #cacaca !important;
+    text-shadow: 0px 0px 10px rgb(59, 59, 59);
+}
+
+.navbar .nav-link[href="login.php"],
+.navbar .nav-link[href="logout.php"] {
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.navbar .nav-link[href="login.php"]:hover,
+.navbar .nav-link[href="logout.php"]:hover {
+    color: #9c9c9c !important;
+    text-shadow: 0px 0px 10px rgba(59, 59, 59, 0.8);
+}
+
+[data-bs-theme="light"] .navbar .nav-link[href="login.php"]:hover,
+[data-bs-theme="light"] .navbar .nav-link[href="logout.php"]:hover,
+[data-bs-theme="yellow"] .navbar .nav-link[href="login.php"]:hover,
+[data-bs-theme="yellow"] .navbar .nav-link[href="logout.php"]:hover {
+    color: #cacaca !important;
+    text-shadow: 0px 0px 10px rgba(59, 59, 59, 0.8);
+}
+
+
+/* Pozostałe style strony */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Dodatkowy styl dla sekcji, aby była wyraźnie widoczna */
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.map-container {
+    width: 50vw;
+    height: 24vw;
+    max-width: 600px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+[data-bs-theme="dark"] .bg-primary {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+[data-bs-theme="blue"] .bg-primary {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+[data-bs-theme="light"] .bg-primary {
+    background: linear-gradient(45deg, #5cbf9e, #006f4a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+[data-bs-theme="yellow"] .bg-primary {
+    background: linear-gradient(45deg, #ecea8f, #6f6600);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+[data-bs-theme="auto"] .bg-primary {
+    background: linear-gradient(45deg, #363636, #1d1d1d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+[data-bs-theme="dark"] .page-footer {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .page-footer {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="light"] .page-footer {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="yellow"] .page-footer {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="auto"] .page-footer {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="dark"] .border-primary {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="blue"] .border-primary {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="light"] .border-primary {
+    background: linear-gradient(45deg, #5cbf9e, #006f4a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="yellow"] .border-primary {
+    background: linear-gradient(45deg, #ecea8f, #6f6600);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="auto"] .border-primary {
+    background: linear-gradient(45deg, #363636, #1d1d1d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="blue"] .bg-light {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="light"] .bg-light {
+    background: linear-gradient(45deg, #5cbf9e, #006f4a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="yellow"] .bg-light {
+    background: linear-gradient(45deg, #ecea8f, #6f6600);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="auto"] .bg-light {
+    background: linear-gradient(45deg, #363636, #1d1d1d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .accordion-button {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="light"] .accordion-button {
+    background: linear-gradient(45deg, #5cbf9e, #006f4a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="yellow"] .accordion-button {
+    background: linear-gradient(45deg, #ecea8f, #6f6600);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="auto"] .accordion-button {
+    background: linear-gradient(45deg, #363636, #1d1d1d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* Animacja gradientu dla przycisków w ciemnym motywie */
+
+[data-bs-theme="dark"] .btn-primary {
+    background: linear-gradient(45deg, #6d6d6d, #7c1313);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #6d6d6d;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-bs-theme="blue"] .btn-primary {
+    background: linear-gradient(45deg, #666666, #120e74);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #6d6d6d;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-bs-theme="light"] .btn-primary {
+    background: linear-gradient(45deg, #5be1b4, #127a57);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #5be1b4;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-bs-theme="yellow"] .btn-primary {
+    background: linear-gradient(45deg, #fffeaf, #9f9310);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #eeec8a;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-bs-theme="auto"] .btn-primary {
+    background: linear-gradient(45deg, #363636, #242424);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #363636;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Efekt hover dla przycisku */
+
+[data-bs-theme="dark"] .btn-primary:hover {
+    background: linear-gradient(45deg, #6d6d6d, #7c1313);
+    opacity: 80%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #9c1212;
+}
+
+[data-bs-theme="blue"] .btn-primary:hover {
+    background: linear-gradient(45deg, #666666, #120e74);
+    opacity: 80%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #221e9c;
+}
+
+[data-bs-theme="light"] .btn-primary:hover {
+    background: linear-gradient(45deg, #5be1b4, #127a57);
+    opacity: 80%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #18996e;
+}
+
+[data-bs-theme="yellow"] .btn-primary:hover {
+    background: linear-gradient(45deg, #fffeaf, #9f9310);
+    opacity: 80%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #f8f677;
+}
+
+[data-bs-theme="auto"] .btn-primary:hover {
+    background: linear-gradient(45deg, #363636, #242424);
+    opacity: 80%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #414141;
+}
+
+
+/* Efekt active dla przycisku */
+
+[data-bs-theme="dark"] .btn-primary:active {
+    background: linear-gradient(45deg, #6d6d6d, #7c1313);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #9c1212;
+}
+
+[data-bs-theme="blue"] .btn-primary:active {
+    background: linear-gradient(45deg, #666666, #120e74);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #221e9c;
+}
+
+[data-bs-theme="light"] .btn-primary:active {
+    background: linear-gradient(45deg, #5be1b4, #127a57);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #18996e;
+}
+
+[data-bs-theme="yellow"] .btn-primary:active {
+    background: linear-gradient(45deg, #fffeaf, #9f9310);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #f8f677;
+}
+
+[data-bs-theme="auto"] .btn-primary:active {
+    background: linear-gradient(45deg, #363636, #242424);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #414141;
+}
+
+.powrot {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+[data-bs-theme="auto"] .powrot {
+    background: linear-gradient(45deg, #363636, #242424);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #414141;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* Tryb jasny */
+
+[data-bs-theme="light"] .powrot {
+    background: linear-gradient(45deg, #5be1b4, #127a57);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #18996e;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="yellow"] .powrot {
+    background: linear-gradient(45deg, #fffeaf, #9f9310);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #f8f677;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* Tryb ciemny */
+
+[data-bs-theme="dark"] .powrot {
+    background: linear-gradient(45deg, #6d6d6d, #7c1313);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #9c1212;
+    color: white;
+}
+
+[data-bs-theme="blue"] .powrot {
+    background: linear-gradient(45deg, #666666, #120e74);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    border-color: #221e9c;
+    color: white;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+[data-bs-theme="dark"] main a {
+    color: orange;
+}
+
+[data-bs-theme="blue"] main a {
+    color: orange;
+}
+
+[data-bs-theme="light"] main a {
+    color: #570a8b;
+}
+
+[data-bs-theme="yellow"] main a {
+    color: #570a8b;
+}
+
+[data-bs-theme="auto"] main a {
+    color: #013cc6;
+}
+
+#audioPlayer {
+    width: 100%;
+    min-width: 640vw;
+    max-width: 640vw;
+    margin-top: 1vw;
+    border: 0.2vw solid black;
+    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] #audioPlayer {
+    border: 0.2vw solid white;
+    box-shadow: 0 1vw 1vw rgba(75, 75, 75, 0.5);
+}
+
+[data-bs-theme="blue"] #audioPlayer {
+    border: 0.2vw solid white;
+    box-shadow: 0 1vw 1vw rgba(75, 75, 75, 0.5);
+}
+
+#mapPlayer {
+    border: 0.2vw solid black;
+    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] #mapPlayer {
+    border: 0.2vw solid white;
+    box-shadow: 0 1vw 1vw rgba(75, 75, 75, 0.5);
+}
+
+[data-bs-theme="blue"] #mapPlayer {
+    border: 0.2vw solid white;
+    box-shadow: 0 1vw 1vw rgba(75, 75, 75, 0.5);
+}
+
+
+/* Efekt hover */
+
+.powrot:hover {
+    filter: brightness(1.2);
+}
+
+
+/* Animacja tła gradientowego */
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Auto (opcja automatyczna może bazować na preferencjach systemowych) */
+
+@media (prefers-color-scheme: dark) {
+    body[data-bs-theme="auto"] {
+        background-color: #ffffe6;
+        color: #f8f9fa;
+    }
+    .navbar[data-bs-theme="auto"] {
+        background-color: #343a40;
+    }
+    .page-footer[data-bs-theme="auto"] {
+        background-color: #343a40;
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body[data-bs-theme="auto"] {
+        background-color: #ffffe6;
+        color: #212529;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body[data-bs-theme="auto"] {
+        background-color: #ffffe6;
+        color: #212529;
+    }
+    .navbar[data-bs-theme="auto"] {
+        background-color: #007bff;
+    }
+    .page-footer[data-bs-theme="auto"] {
+        background-color: #f8f9fa;
+        color: #212529;
+        border-color: #007bff;
+    }
+}
+
+.table-custom {
+    margin: 5% auto;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    margin-top: 1%;
+    border: rgb(107, 107, 107) 1px solid;
+    overflow-x: auto;
+}
+
+.sekcja1 {
+    margin-top: 50px;
+}
