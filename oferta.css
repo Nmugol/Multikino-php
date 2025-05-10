@@ -1,0 +1,419 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container h1{
+    font-size: 60px;
+}
+
+
+
+.offer-banner {
+    color: black;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    
+
+}
+
+.offer-banner img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.offer-banner h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.offer-banner p {
+    font-size: 20px;
+
+    margin: 5px;
+
+}
+
+@keyframes pulsowanie {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.offer-price {
+    color: rgb(250, 15, 15);
+    font-weight: bold;
+    font-size: 28px;
+   display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: pulsowanie 1.5s infinite ease-in-out;
+}
+
+
+.old-price {
+    text-decoration: line-through;
+    color: #444444;
+}
+
+.popcorn-carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+
+}
+
+.popcorn-item {
+    flex: 0 0 33%;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    margin: 0px;
+
+}
+
+.popcorn-item h3 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 30px;
+    
+}
+
+.popcorn-item p {
+    font-size: 20px;
+margin:0px;
+
+
+}
+
+.popcorn-item img {
+    width: 110px;
+    height: 150px;
+    object-fit: cover;
+
+
+}
+
+.popcorn-carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        /* Początkowa pozycja */
+    }
+    25% {
+        transform: translateX(-33.33%);
+        /* Pierwszy element przesunięty poza ekran */
+    }
+    50% {
+        transform: translateX(-66.66%);
+        /* Drugi element przesunięty poza ekran */
+    }
+    75% {
+        transform: translateX(-100%);
+        /* Trzeci element przesunięty poza ekran */
+    }
+    100% {
+        transform: translateX(0);
+        /* Powrót do początkowej pozycji */
+    }
+}
+
+.popcorn-item.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popcorn-item.active {
+    opacity: 1;
+    pointer-events: all;
+    /* Element staje się klikalny */
+}
+
+
+/* Sekcja Zestawy */
+
+.set-section {
+    margin-top: 6vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1vw;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 2vw;
+}
+
+.set-section h2 {
+    font-size: 28px;
+    margin-bottom: 2vw;
+}
+
+.set-section img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 15px rgba(187, 25, 58, 0.5); /* Dodaje efekt cienia */
+    margin: 2vw 0;
+}
+
+.set-section p {
+    font-size: 18px;
+    margin: 1vw 0;
+}
+.czerwony {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .container h1{
+        font-size: 27px;
+    }
+    .offer-banner h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .offer-banner p {
+        font-size: 15px;
+        margin: 5px;
+    
+    }
+    
+  
+    .offer-banner img {
+        width: 150px; /* Mniejsza szerokość na telefonach */
+        height: 100px; /* Mniejsza wysokość na telefonach */
+        
+    }
+    
+    .set-section {
+        padding: 6vw;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1rem;
+        text-align: center;
+        color: black;
+        margin-bottom: 2vw;
+        height: 370px;
+    
+    }
+    .set-section p {
+        font-size: 15px;
+        margin: 15px;
+    }
+    
+.set-section h2 {
+    font-size: 25px;
+    margin: 20px;
+
+}
+
+
+    .popcorn-item {
+        flex: 1 1 100%;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+    }
+    
+  
+    
+.set-section img {
+    width: 220px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 15px rgba(187, 25, 58, 0.5); /* Dodaje efekt cienia */
+    margin: 2vw 0;
+}
+.popcorn-grid {
+    grid-template-columns: 1fr; /* 1 kolumna na bardzo małych ekranach */
+}
+    
+
+}
+@media (max-width: 480px) {
+
+    .container h1{
+        font-size: 23px;
+    }
+    .offer-banner h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .offer-banner p {
+        font-size: 15px;
+    
+        margin: 5px;
+    
+    }
+    
+   
+    .offer-banner img {
+        width: 150px; /* Mniejsza szerokość na telefonach */
+        height: 100px; /* Mniejsza wysokość na telefonach */
+    }
+    .set-section {
+        padding: 6vw;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 1vw;
+        border-radius: 1rem;
+        text-align: center;
+        color: black;
+        margin-bottom: 2vw;    
+    }
+    
+.set-section h2 {
+    font-size: 25px;
+    margin-bottom: 2vw;
+}
+
+    .set-section img {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 2vw;
+        box-shadow: 5px 5px 15px rgba(187, 25, 58, 0.5); /* Dodaje efekt cienia */
+        margin: 2vw 0;
+    }
+
+    .set-section p {
+        font-size: 10px;
+    }
+
+    .popcorn-grid {
+        grid-template-columns: 1fr; /* 1 kolumna na bardzo małych ekranach */
+    }
+    
+.set-section img {
+    width: 220px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 15px rgba(187, 25, 58, 0.5); /* Dodaje efekt cienia */
+    margin: 2vw 0;
+}
+
+    
+
+}
+[data-bs-theme="dark"] .offer-banner {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    color: white;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="dark"] .carousel-item {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="dark"] .carousel-item h3 {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="dark"] .carousel-item p {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="dark"] .set-section {
+    background: linear-gradient(45deg, #424242, #490000);
+    background-size: 400% 400%;
+    color: white;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="dark"] .old-price {
+    color: #7d7d7d;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* */
+
+[data-bs-theme="blue"] .offer-banner {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    color: white;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .carousel-item {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+[data-bs-theme="blue"] .carousel-item h3 {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .carousel-item p {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .set-section {
+    background: linear-gradient(45deg, #424242, #020049);
+    background-size: 400% 400%;
+    color: white;
+    animation: gradientAnimation 20s ease infinite;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+[data-bs-theme="blue"] .old-price {
+    color: #7d7d7d;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* Animacja tła gradientowego */
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
