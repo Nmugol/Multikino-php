@@ -9,4 +9,4 @@ Panel administracyjny aplikacji zostanie wyposażony w funkcje umożliwiające d
 Projekt zakłada stworzenie systemu, który łączy funkcjonalność z prostotą obsługi, zapewniając użytkownikom pozytywne doświadczenia zarówno na etapie planowania wizyty w kinie, jak i realizacji zakupu.
 
 <h4>Wykonali:</h4>
-Hanna Wójcicka, Patryk Piszczek, Przemysław Piszczek, Norbert Muzolf
+Hanna Wójcicka 120134, Patryk Piszczek 120684, Przemysław Piszczek 120685, Norbert Muzolf 120668
