@@ -7,3 +7,9 @@ System zostanie udostępniony użytkownikom za pośrednictwem intuicyjnej strony
 Panel administracyjny aplikacji zostanie wyposażony w funkcje umożliwiające dodawanie nowych filmów do oferty oraz tworzenie ich harmonogramów. Administrator będzie miał również możliwość anulowania rezerwacji na życzenie klienta oraz zwrotu środków za niewykorzystane bilety.
 
 Projekt zakłada stworzenie systemu, który łączy funkcjonalność z prostotą obsługi, zapewniając użytkownikom pozytywne doświadczenia zarówno na etapie planowania wizyty w kinie, jak i realizacji zakupu.
+
+<h4>Wykonali:</h4>
+<h5>Hanna Wójcicka</h5>
+<h5>Patryk Piszczek</h5>
+<h5>Przemysław Piszczek</h5>
+<h5>Norbert Muzolf</h5>
