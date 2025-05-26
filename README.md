@@ -11,4 +11,5 @@ Projekt zakłada stworzenie systemu, który łączy funkcjonalność z prostotą
 <h3>Wykonali:</h3>
 Hanna Wójcicka 120134, Patryk Piszczek 120684, Przemysław Piszczek 120685, Norbert Muzolf 120668
 
-<a href="https://multikino.kesug.com/" style="color:blue;"><h3>Strona internetowa</h3></a>
+<h3>Strona internetowa:</h3>
+https://multikino.kesug.com/
