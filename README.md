@@ -8,7 +8,7 @@ Panel administracyjny aplikacji zostanie wyposażony w funkcje umożliwiające d
 
 Projekt zakłada stworzenie systemu, który łączy funkcjonalność z prostotą obsługi, zapewniając użytkownikom pozytywne doświadczenia zarówno na etapie planowania wizyty w kinie, jak i realizacji zakupu.</p>
 <h3>Strona internetowa:</h3>
-[MULTIKINO](href="https://multikino.kesug.com/)
+[MULTIKINO](https://multikino.kesug.com/){:target="_blank"}
 <br>
 <h3>Wykonali:</h3>
 Hanna Wójcicka 120134, Patryk Piszczek 120684, Przemysław Piszczek 120685, Norbert Muzolf 120668
